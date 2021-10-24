@@ -1,0 +1,25 @@
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+
+node_modules
+bower_components
+
+*.sublime*
+
+psd
+thumb
+sketch
+
+# Dist directores contain generated artifacts.
+dist
+
+# Build directories contain build artifacts.
+build
+
+# Local Netlify folder
+.netlify
+
+todo.md
