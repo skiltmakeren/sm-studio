@@ -42,5 +42,17 @@ export default {
       type: "image",
       validation: (Rule) => Rule.required(),
     },
+    {
+      title: "Underkategorier",
+      name: "subCategories",
+      type: "array",
+      of: [{ type: "company-service-sub-category" }],
+    },
+    {
+      name: "order",
+      title: "Order",
+      type: "number",
+      hidden: true,
+    },
   ],
 };

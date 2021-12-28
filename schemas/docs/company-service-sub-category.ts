@@ -1,8 +1,8 @@
 import image from "../utils/image";
 
 export default {
-  title: "Prosess",
-  name: "what-we-do",
+  title: "Tjeneste | Underkategori",
+  name: "company-service-sub-category",
   type: "document",
   fields: [
     {
@@ -12,15 +12,15 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
-      title: "Pitch",
-      name: "pitch",
-      type: "string",
-      description: "En kort pitch.",
-      validation: (Rule) => Rule.required().max(180),
+      title: "Innhold",
+      name: "content",
+      type: "array",
+      of: [{ type: "block" }, { ...image }],
+      validation: (Rule) => Rule.required(),
     },
     {
-      title: "Ikon",
-      name: "icon",
+      title: "Cover-bilde",
+      name: "coverImage",
       type: "image",
       validation: (Rule) => Rule.required(),
     },

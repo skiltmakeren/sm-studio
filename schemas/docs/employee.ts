@@ -33,5 +33,11 @@ export default {
       type: "image",
       validation: (Rule) => Rule.required(),
     },
+    {
+      name: "order",
+      title: "Order",
+      type: "number",
+      hidden: true,
+    },
   ],
 };
