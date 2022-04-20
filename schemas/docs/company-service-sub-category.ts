@@ -16,12 +16,12 @@ export default {
       name: "content",
       type: "array",
       of: [{ type: "block" }, { ...image }],
-      validation: (Rule) => Rule.required(),
     },
     {
-      title: "Cover-bilde",
-      name: "coverImage",
-      type: "image",
+      title: "Bilder",
+      name: "images",
+      type: "array",
+      of: [{ type: "image" }],
       validation: (Rule) => Rule.required(),
     },
     {

@@ -34,7 +34,12 @@ export default {
       name: "content",
       type: "array",
       of: [{ type: "block" }, { ...image }],
-      validation: (Rule) => Rule.required(),
+    },
+    {
+      title: "Bilder",
+      name: "images",
+      type: "array",
+      of: [{ type: "image" }],
     },
     {
       title: "Ikon",
@@ -47,6 +52,19 @@ export default {
       name: "subCategories",
       type: "array",
       of: [{ type: "company-service-sub-category" }],
+    },
+    {
+      title: "Layout",
+      name: "layout",
+      type: "string",
+      options: {
+        list: [
+          { title: "To-søyle", value: "two-column" },
+          { title: "Split", value: "split" },
+        ],
+        layout: "radio",
+      },
+      validation: (Rule) => Rule.required(),
     },
     {
       name: "order",
