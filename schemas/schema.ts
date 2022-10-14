@@ -7,6 +7,7 @@ import customer from "./docs/customer";
 import download from "./docs/download";
 import downloadCategory from "./docs/download-category";
 import employee from "./docs/employee";
+import environmentPage from "./docs/environment-page";
 import newsArticle from "./docs/news-article";
 import whatWeDo from "./docs/what-we-do";
 
@@ -19,6 +20,7 @@ export default createSchema({
     download,
     downloadCategory,
     employee,
+    environmentPage,
     newsArticle,
     whatWeDo,
   ]),
