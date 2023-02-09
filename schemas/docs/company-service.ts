@@ -61,6 +61,7 @@ export default {
         list: [
           { title: "To-søyle", value: "two-column" },
           { title: "Split", value: "split" },
+          { title: "Bird Free", value: "bird-free" },
         ],
         layout: "radio",
       },
